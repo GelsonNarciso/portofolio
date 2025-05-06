@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio Full-Stack</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #005999, #003f6b);
+      color: white;
+      padding: 4rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-image: url('img/Slide1.JPG');
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      text-align: left;
+    }
+
+    .header-content {
+      max-width: 600px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    header button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    header button:hover {
+      background-color: #005fa3;
+    }
+
+    nav {
+      background: #e0f2ff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #0077b6;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 3rem 2rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .card i {
+      font-size: 2rem;
+      color: #0077b6;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #d0eaff;
+      color: #333;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    .button {
+      background: #0077b6;
+      color: white;
+      padding: 0.6rem 1.6rem;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 0.5rem;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: #023e8a;
+    }
+
+    h2 i {
+      margin-right: 0.5rem;
+      color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <h1>Olá, sou Gelson Narciso</h1>
+    <p>Desenvolvedor Full-Stack apaixonado por criar soluções web modernas e eficientes.</p>
+    <button class="button" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
+      <i class="fas fa-paper-plane"></i> Fale comigo
+    </button>
+  </div>
+</header>
+
+<nav>
+  <a href="#projetos"><i class="fas fa-laptop-code"></i> Projetos</a>
+  <a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a>
+  <a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
+</nav>
+
+<section id="projetos">
+  <h2><i class="fas fa-folder-open"></i> Projetos Recentes</h2>
+  <div class="grid">
+    <div class="card">
+      <i class="fas fa-comments"></i>
+      <h3>Sistema de Chat</h3>
+      <p>Chat em tempo real com upload de arquivos e notificações.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-users"></i>
+      <h3>Rede Social Escolar</h3>
+      <p>Plataforma segura de interação entre professores e alunos.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-utensils"></i>
+      <h3>Gestor de Restaurante</h3>
+      <p>Dashboard com pedidos, cardápio e gestão de entregas.</p>
+    </div>
+  </div>
+</section>
+
+<section id="habilidades">
+  <h2><i class="fas fa-tools"></i> Habilidades</h2>
+  <div class="grid">
+    <div class="card">
+      <h3><i class="fab fa-html5"></i> Frontend</h3>
+      <p>HTML, CSS, JavaScript, Bootstrap, React</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-server"></i> Backend</h3>
+      <p>PHP, MySQL, Node.js, Laravel, API REST</p>
+    </div>
+    <div class="card">
+      <h3><i class="fas fa-wrench"></i> Outros</h3>
+      <p>Git, Linux, Firebase, Docker básico, UI/UX</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <h2><i class="fas fa-address-book"></i> Contato</h2>
+  <p>Vamos conversar? Me chama no WhatsApp ou envie um e-mail:</p>
+  <button class="button" onclick="window.open('https://wa.me/SEU_NUMERO', '_blank')"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+  <button class="button" onclick="window.location='mailto:seu@email.com'"><i class="fas fa-envelope"></i> Email</button>
+</section>
+
+<footer>
+  <p>&copy; 2025 - Desenvolvido por [Seu Nome]. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

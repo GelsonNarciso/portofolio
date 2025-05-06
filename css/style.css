@@ -1,0 +1,355 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;
+   color: #333;
+}
+body{
+    background-color:#333;
+}
+.tela_principal{
+    height: 1000px;
+}
+.c{
+    background-color: blue;
+    padding: 10px;
+    border-radius: 0px 15px;
+}
+.cabecario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -620px;
+    margin-top: 80px;
+}
+
+.cabecario img{
+    width: 600px;
+    height: 500px;
+    float: right;
+}
+.cabecario h1{
+    color: blue;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.f{
+    width: 330px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    border-radius: 0px 25px;
+}
+.f h2{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.l{
+    display: flex;
+    margin-left: 20px;
+}
+.l div{
+    font-size: 30px;
+    margin: 20px;
+}
+
+/* formatação css para elementos da area sobre*/
+
+.sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+   
+}
+.texto h1{
+    color: silver;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-left: 20px;
+}
+.texto h2{
+    color: silver;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    margin-left: 20px;
+    background-color: transparent;
+}
+#linha{
+    width: 160px;
+    height: 5px;
+    background-color: blue;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.texto .p{
+    width: 400px;
+    padding: 20px 20px 20px 20px;
+}
+.texto .v{
+background-color: blue;
+width: 100px;
+height: 40px;
+padding: 10px;
+text-align: center;
+border-radius: 0px 15px;
+margin-left: 20px;
+
+}
+.btn-success{
+    position: relative;
+    left: 15px;
+
+}
+/* formatação css para elementos da area do carrosel */
+
+.container
+{
+position: relative;
+top: 230px;
+margin-bottom: 250px;
+}
+.git{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+}
+
+.card-group{
+    position: relative;
+    top: 100px;
+    margin-bottom: 200px;
+}
+footer{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.enviar{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+}
+form{
+    width:100%;
+}
+.form-group{
+    width: 100%;
+}
+.en{
+   position: relative;
+   left: -3px;
+   top: 10px;
+   width: 200px;
+   border: 1px solid white;
+}
+.r{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+.r img{
+    margin-right: 10px;
+}
+.preto{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    text-align: center;
+}
+.preto p{
+    color: white;
+    position: relative;
+    top: 20px;
+    font-size: 12px;
+}
+
+
+/* animações */
+
+
+.card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: transform 0.6s;
+  }
+  
+  .card:hover .inner {
+    transform: rotateY(180deg);
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  .front {
+    background: #007BFF;
+    color: white;
+  }
+  
+  .back {
+    background: #FF5722;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /* menu */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  /* Estilo do menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0;
+    margin-right: 50px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: green;
+  }
+
+  /* Estilo do botão hambúrguer */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: transform 0.3s;
+  }
+
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 150px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    nav ul.active {
+      display: flex;
+    }
+
+    .menu-toggle {
+      display: flex;
+    }
+  }
+  .mov{
+    position: relative;
+    top: 250px;
+
+  }
+  
+
+  .gradient-border-round {
+
+}
+
+.gradient-border-round img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
