@@ -6,15 +6,20 @@
   <title>Portfólio Full-Stack</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    body {
+    *{
       margin: 0;
+    padding: 0;
+    }
+    body {
       font-family: 'Poppins', sans-serif;
-      background: #fefefe;
+      background: rgb(199, 197, 197);
       color: #333;
     }
 
-    header {
+    .narcisoX1 {
       background: linear-gradient(to right, #005999, #003f6b);
       color: white;
       padding: 4rem 2rem;
@@ -28,22 +33,22 @@
       text-align: left;
     }
 
-    .header-content {
+    .narcisoX2 {
       max-width: 600px;
     }
 
-    header h1 {
+    .narcisoX3 {
       font-size: 3rem;
       margin-bottom: 1rem;
       font-weight: 700;
     }
 
-    header p {
+    .narcisoX4 {
       font-size: 1.3rem;
       margin-bottom: 2rem;
     }
 
-    header button {
+    .narcisoX5 {
       background-color: #0077cc;
       color: white;
       border: none;
@@ -54,17 +59,17 @@
       transition: background-color 0.3s;
     }
 
-    header button:hover {
+    .narcisoX5:hover {
       background-color: #005fa3;
     }
 
-    nav {
+    .narcisoX6 {
       background: #e0f2ff;
       padding: 1rem;
       text-align: center;
     }
 
-    nav a {
+    .narcisoX7 {
       color: #0077b6;
       margin: 0 1rem;
       text-decoration: none;
@@ -76,13 +81,13 @@
       padding: 3rem 2rem;
     }
 
-    .grid {
+    .narcisoX8 {
       display: grid;
       gap: 1.5rem;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    .card {
+    .narcisoX9 {
       background: #fff;
       padding: 1.5rem;
       border-radius: 15px;
@@ -91,30 +96,37 @@
       text-align: center;
     }
 
-    .card:hover {
+    .narcisoX9:hover {
       transform: translateY(-5px);
     }
 
-    .card img {
+    #projetos{
+      background-color:white;
+    }
+    #habilidades
+    {
+      background-color: white;
+    }
+    .narcisoX10 {
       width: 100%;
       border-radius: 10px;
       margin-bottom: 1rem;
     }
 
-    .card i {
+    .narcisoX11 {
       font-size: 2rem;
       color: #0077b6;
       margin-bottom: 0.5rem;
     }
 
-    footer {
+    .narcisoX12 {
       background: #d0eaff;
       color: #333;
       text-align: center;
       padding: 1.5rem;
     }
 
-    .button {
+    .narcisoX13 {
       background: #0077b6;
       color: white;
       padding: 0.6rem 1.6rem;
@@ -126,11 +138,11 @@
       transition: 0.3s;
     }
 
-    .button:hover {
+    .narcisoX13:hover {
       background: #023e8a;
     }
 
-    h2 i {
+    .narcisoX14 {
       margin-right: 0.5rem;
       color: #0077b6;
     }
@@ -138,37 +150,89 @@
 </head>
 <body>
 
-<header>
-  <div class="header-content">
-    <h1>Olá, sou Gelson Narciso</h1>
-    <p>Desenvolvedor Full-Stack apaixonado por criar soluções web modernas e eficientes.</p>
-    <button class="button" onclick="document.getElementById('contato').scrollIntoView({behavior: 'smooth'})">
-      <i class="fas fa-paper-plane"></i> Fale comigo
-    </button>
-  </div>
-</header>
+  <header class="gelson-header">
+    <div class="gelson-logo">PORTOFÓLIO</div>
+  
+    <!-- Ícone Hamburguer -->
+    <div class="gelson-hamburger" onclick="abrirMenu()">
+      <i class="fa fa-bars"></i>
+    </div>
+  
+    <!-- Navegação Normal (desaparece em mobile) -->
+    <nav class="gelson-nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Directors <i class="fa fa-angle-down"></i></a>
+      <a href="#">Blog</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+      <i class="fa fa-shopping-cart"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+    </nav>
+  
+    <!-- Menu Lateral (mobile) -->
+    <div id="menuLateral" class="gelson-menu-lateral">
+      <span class="gelson-fechar" onclick="fecharMenu()">&times;</span>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Directors</a>
+      <a href="#">Blog</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </div>
+  </header>
+  
 
-<nav>
-  <a href="#projetos"><i class="fas fa-laptop-code"></i> Projetos</a>
-  <a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a>
-  <a href="#contato"><i class="fas fa-envelope"></i> Contato</a>
-</nav>
+<!-- Seção Hero -->
+<section class="gelson-hero">
+  <img src="img/GELSON.jpg" alt="Hero" class="gelson-bg">
+  
+  <!-- Conteúdo -->
+  <div class="gelson-content">
+    <h1>Programador & Desenvolvedor Full-Stack</h1>
+    <p><strong>Inspiro PRO</strong> includes multiple Starter Sites with numerous page templates that you can import to your website.<br>
+    Just like the original <strong>Inspiro theme</strong>, the PRO version comes with a beautiful slideshow that supports videos from different sources, including Vimeo & YouTube.</p>
+    <a href="#" class="gelson-button">OUR WORK</a>
+  </div>
+
+  <!-- Setas -->
+  <div class="gelson-arrows">
+    <i class="fa fa-chevron-left"></i>
+    <i class="fa fa-chevron-right"></i>
+  </div>
+
+  <!-- Pause -->
+  <div class="gelson-pause">
+    <span>Pause</span>
+    <i class="fa fa-volume-mute"></i>
+  </div>
+</section>
+<div class="narcisoX6">
+  <a href="#projetos" class="narcisoX7"><i class="fas fa-laptop-code"></i> Projetos</a>
+  <a href="#habilidades" class="narcisoX7"><i class="fas fa-code"></i> Habilidades</a>
+  <a href="#contato" class="narcisoX7"><i class="fas fa-envelope"></i> Contato</a>
+</div>
 
 <section id="projetos">
-  <h2><i class="fas fa-folder-open"></i> Projetos Recentes</h2>
-  <div class="grid">
-    <div class="card">
-      <i class="fas fa-comments"></i>
+  <h2><i class="fas fa-folder-open narcisoX14"></i> Projetos Recentes</h2>
+  <div class="narcisoX8">
+    <div class="narcisoX9">
+      <i class="fas fa-comments narcisoX11"></i>
       <h3>Sistema de Chat</h3>
       <p>Chat em tempo real com upload de arquivos e notificações.</p>
     </div>
-    <div class="card">
-      <i class="fas fa-users"></i>
+    <div class="narcisoX9">
+      <i class="fas fa-users narcisoX11"></i>
       <h3>Rede Social Escolar</h3>
       <p>Plataforma segura de interação entre professores e alunos.</p>
     </div>
-    <div class="card">
-      <i class="fas fa-utensils"></i>
+    <div class="narcisoX9">
+      <i class="fas fa-utensils narcisoX11"></i>
       <h3>Gestor de Restaurante</h3>
       <p>Dashboard com pedidos, cardápio e gestão de entregas.</p>
     </div>
@@ -176,33 +240,42 @@
 </section>
 
 <section id="habilidades">
-  <h2><i class="fas fa-tools"></i> Habilidades</h2>
-  <div class="grid">
-    <div class="card">
-      <h3><i class="fab fa-html5"></i> Frontend</h3>
+  <h2><i class="fas fa-tools narcisoX14"></i> Habilidades</h2>
+  <div class="narcisoX8">
+    <div class="narcisoX9">
+      <h3><i class="fab fa-html5 narcisoX14"></i> Frontend</h3>
       <p>HTML, CSS, JavaScript, Bootstrap, React</p>
     </div>
-    <div class="card">
-      <h3><i class="fas fa-server"></i> Backend</h3>
+    <div class="narcisoX9">
+      <h3><i class="fas fa-server narcisoX14"></i> Backend</h3>
       <p>PHP, MySQL, Node.js, Laravel, API REST</p>
     </div>
-    <div class="card">
-      <h3><i class="fas fa-wrench"></i> Outros</h3>
+    <div class="narcisoX9">
+      <h3><i class="fas fa-wrench narcisoX14"></i> Outros</h3>
       <p>Git, Linux, Firebase, Docker básico, UI/UX</p>
     </div>
   </div>
 </section>
 
 <section id="contato">
-  <h2><i class="fas fa-address-book"></i> Contato</h2>
+  <h2><i class="fas fa-address-book narcisoX14"></i> Contato</h2>
   <p>Vamos conversar? Me chama no WhatsApp ou envie um e-mail:</p>
-  <button class="button" onclick="window.open('https://wa.me/SEU_NUMERO', '_blank')"><i class="fab fa-whatsapp"></i> WhatsApp</button>
-  <button class="button" onclick="window.location='mailto:seu@email.com'"><i class="fas fa-envelope"></i> Email</button>
+  <button class="narcisoX13" onclick="window.open('https://wa.me/SEU_NUMERO', '_blank')"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+  <button class="narcisoX13" onclick="window.location='mailto:seu@email.com'"><i class="fas fa-envelope"></i> Email</button>
 </section>
-
-<footer>
+<div class="narcisoX12">
   <p>&copy; 2025 - Desenvolvido por [Seu Nome]. Todos os direitos reservados.</p>
-</footer>
+</div>
+<script>
+  function abrirMenu() {
+    document.getElementById("menuLateral").style.width = "250px";
+  }
+
+  function fecharMenu() {
+    document.getElementById("menuLateral").style.width = "0";
+  }
+</script>
+
 
 </body>
 </html>
