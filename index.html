@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="butstrap/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <style>
     *{
@@ -120,8 +122,8 @@
     }
 
     .narcisoX12 {
-      background: #d0eaff;
-      color: #333;
+      background: #333;
+      color: whitesmoke;
       text-align: center;
       padding: 1.5rem;
     }
@@ -147,6 +149,260 @@
       color: #0077b6;
     }
   </style>
+<style>
+  .gelson-job-section {
+    background-image: url('img/script.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+min-height: 40vh;
+position: relative;
+z-index: 1;
+}
+
+.gelson-job-section::before {
+  content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.342); /* escurece o fundo */
+z-index: -1;
+}
+
+</style>
+<style>
+  .gelson-parallax {
+background-image: url('img/GELSON.jpg');
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+min-height: 40vh;
+position: relative;
+z-index: 1;
+}
+
+
+.gelson-parallax::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.342); /* escurece o fundo */
+z-index: -1;
+}
+
+.gelson-glass {
+background: rgba(255, 255, 255, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(10px);
+box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+</style>
+
+
+
+
+<style>
+  
+/* Caixa de contato para Facebook */
+.contact
+{
+  background-color: red;
+}
+.contact-box i {
+    font-size: 50px;
+    color:#0d6efd;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+/* Títulos e Botões */
+.contact-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.btn-contact {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #0d6efd;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-contact:hover {
+    background: #0d6efd;
+    color: white;
+}
+
+/* Facebook - Adicionando Cor Específica para o Botão */
+.contact-box .btn-contact[href*="facebook"] {
+    background: #1877f2;
+    border-color: #1877f2;
+}
+
+/* Facebook Hover */
+.contact-box .btn-contact[href*="facebook"]:hover {
+    background: #0e6fd2;
+    border-color: #0e6fd2;
+    color: white;
+}
+/* Seção de Contato */
+.contact {
+    background:transparent;
+    padding: 80px 20px;
+    text-align: center;
+    color: black;
+}
+
+/* Título */
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #0d6efd;
+}
+
+/* Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Caixa de contato */
+.contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Ícones */
+.contact-box i {
+    font-size: 50px;
+    color:#0d6efd;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+/* Títulos */
+.contact-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Parágrafo */
+.contact-box p {
+    font-size: 1rem;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+.btn-contact {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    color: #0d6efd;
+    text-decoration: none;
+    border: 2px solid #0d6efd;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-contact:hover {
+    background: #0450c4;
+    color: white;
+}
+
+/* Formulário */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #0d6efd;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #0d6efd;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+</style>
+
+<style>
+    .celmaesteves-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .celmaesteves-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .celmaesteves-img img {
+      max-width: 70%;
+      height: auto;
+    }
+
+    .celmaesteves-text {
+      flex: 1 1 300px;
+      padding: 20px;
+      color: #0d6efd; /* Primary do Bootstrap */
+    }
+
+    .celmaesteves-text h1 {
+      font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #0d6efd;
+    }
+
+    .celmaesteves-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: black;
+    }
+  </style>
+</style>
 </head>
 <body>
 
@@ -161,43 +417,35 @@
     <!-- Navegação Normal (desaparece em mobile) -->
     <nav class="gelson-nav">
       <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Directors <i class="fa fa-angle-down"></i></a>
-      <a href="#">Blog</a>
-      <a href="#">Shop</a>
-      <a href="#">Contact</a>
-      <i class="fa fa-shopping-cart"></i>
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-instagram"></i>
+      <a href="#">Projetos</a>
+      <a href="#">Serviços</a>
+      <a href="#">contactos</a>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
     </nav>
   
     <!-- Menu Lateral (mobile) -->
     <div id="menuLateral" class="gelson-menu-lateral">
       <span class="gelson-fechar" onclick="fecharMenu()">&times;</span>
       <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Directors</a>
-      <a href="#">Blog</a>
-      <a href="#">Shop</a>
-      <a href="#">Contact</a>
+      <a href="#">Projetos</a>
+      <a href="#">Serviços</a>
+      <a href="#">contactos</a>
     </div>
   </header>
   
 
 <!-- Seção Hero -->
 <section class="gelson-hero">
-  <img src="img/GELSON.jpg" alt="Hero" class="gelson-bg">
+  <img src="img/jmobi.jpg" alt="Hero" class="gelson-bg">
   
   <!-- Conteúdo -->
   <div class="gelson-content">
-    <h1>Programador & Desenvolvedor Full-Stack</h1>
-    <p><strong>Inspiro PRO</strong> includes multiple Starter Sites with numerous page templates that you can import to your website.<br>
-    Just like the original <strong>Inspiro theme</strong>, the PRO version comes with a beautiful slideshow that supports videos from different sources, including Vimeo & YouTube.</p>
-    <a href="#" class="gelson-button">OUR WORK</a>
+    <h1>Gelson Narciso</h1>
+    <h1>Dev Full-Stack</h1>
+    <p>penso profundamente sobre as coisas, não pelo que elas são mais pelo que elas podem ser</p>
+    <a href="#" class="gelson-button">Meu git hub</a>
   </div>
 
   <!-- Setas -->
@@ -208,8 +456,8 @@
 
   <!-- Pause -->
   <div class="gelson-pause">
-    <span>Pause</span>
-    <i class="fa fa-volume-mute"></i>
+
+
   </div>
 </section>
 <div class="narcisoX6">
@@ -223,48 +471,169 @@
   <div class="narcisoX8">
     <div class="narcisoX9">
       <i class="fas fa-comments narcisoX11"></i>
-      <h3>Sistema de Chat</h3>
-      <p>Chat em tempo real com upload de arquivos e notificações.</p>
+      <h3>stop colera</h3>
+      <p>plataforma de combate e prevenção a cólera.</p>
+      <button class="btn btn-primary w-10">Ver projeto</button>
     </div>
     <div class="narcisoX9">
       <i class="fas fa-users narcisoX11"></i>
       <h3>Rede Social Escolar</h3>
-      <p>Plataforma segura de interação entre professores e alunos.</p>
+      <p>melhora a troca de informação e acesso a matérias na escola</p>
+      <button class="btn btn-primary w-10">Ver projeto</button>
     </div>
     <div class="narcisoX9">
-      <i class="fas fa-utensils narcisoX11"></i>
-      <h3>Gestor de Restaurante</h3>
-      <p>Dashboard com pedidos, cardápio e gestão de entregas.</p>
+      <i class="fas fa-briefcase narcisoX11"></i>
+      <h3>Worknet</h3>
+      <p>Plataforma de obtenção e criação de empregos</p>
+      <button class="btn btn-primary w-10">Ver projeto</button>
     </div>
   </div>
 </section>
+
+
 
 <section id="habilidades">
-  <h2><i class="fas fa-tools narcisoX14"></i> Habilidades</h2>
-  <div class="narcisoX8">
-    <div class="narcisoX9">
-      <h3><i class="fab fa-html5 narcisoX14"></i> Frontend</h3>
-      <p>HTML, CSS, JavaScript, Bootstrap, React</p>
+  <h2 style="color:#0d6efd;"><i class="fas fa-tools narcisoX14" style="color:#0d6efd;"></i> Habilidades</h2>
+  <div class="narcisoX8" style="display:flex; flex-wrap:wrap; gap:20px;">
+
+    <!-- Frontend -->
+    <div class="narcisoX9" style="flex:1; min-width:280px;">
+      <h3 style="color:#0d6efd;"><i class="fab fa-html5 narcisoX14" style="color:#0d6efd;"></i> Frontend</h3>
+      <p style="color:#0d6efd;">HTML, CSS, Bootstrap</p>
+
+      <label style="color:#0d6efd;">HTML</label>
+      <div style="height:12px; background:#e9ecef; border-radius:10px; overflow:hidden; margin-bottom:5px;">
+        <div style="width:90%; height:100%; background:#0d6efd; color:white; font-size:10px; text-align:right; padding-right:6px;">90%</div>
+      </div>
+
+      <label style="color:#0d6efd;">CSS</label>
+      <div style="height:12px; background:#e9ecef; border-radius:10px; overflow:hidden; margin-bottom:5px;">
+        <div style="width:85%; height:100%; background:#0d6efd; color:white; font-size:10px; text-align:right; padding-right:6px;">85%</div>
+      </div>
+
+      <label style="color:#0d6efd;">Bootstrap</label>
+      <div style="height:12px; background:#e9ecef; border-radius:10px; overflow:hidden; margin-bottom:5px;">
+        <div style="width:75%; height:100%; background:#0d6efd; color:white; font-size:10px; text-align:right; padding-right:6px;">75%</div>
+      </div>
     </div>
-    <div class="narcisoX9">
-      <h3><i class="fas fa-server narcisoX14"></i> Backend</h3>
-      <p>PHP, MySQL, Node.js, Laravel, API REST</p>
+
+    <!-- Backend -->
+    <div class="narcisoX9" style="flex:1; min-width:280px;">
+      <h3 style="color:#0d6efd;"><i class="fas fa-server narcisoX14" style="color:#0d6efd;"></i> Backend</h3>
+      <p style="color:#0d6efd;">PHP, MySQL</p>
+
+      <label style="color:#0d6efd;">PHP</label>
+      <div style="height:12px; background:#e9ecef; border-radius:10px; overflow:hidden; margin-bottom:5px;">
+        <div style="width:80%; height:100%; background:#0d6efd; color:white; font-size:10px; text-align:right; padding-right:6px;">80%</div>
+      </div>
+
+      <label style="color:#0d6efd;">MySQL</label>
+      <div style="height:12px; background:#e9ecef; border-radius:10px; overflow:hidden; margin-bottom:5px;">
+        <div style="width:70%; height:100%; background:#0d6efd; color:white; font-size:10px; text-align:right; padding-right:6px;">70%</div>
+      </div>
     </div>
-    <div class="narcisoX9">
-      <h3><i class="fas fa-wrench narcisoX14"></i> Outros</h3>
-      <p>Git, Linux, Firebase, Docker básico, UI/UX</p>
+
+    <!-- Outros -->
+    <div class="narcisoX9" style="flex:1; min-width:280px;">
+      <h3 style="color:#0d6efd;"><i class="fas fa-wrench narcisoX14" style="color:#0d6efd;"></i> Outros</h3>
+      <p style="color:#0d6efd;">Visual Basic, C</p>
+
+      <label style="color:#0d6efd;">Visual Basic</label>
+      <div style="height:12px; background:#e9ecef; border-radius:10px; overflow:hidden; margin-bottom:5px;">
+        <div style="width:60%; height:100%; background:#0d6efd; color:white; font-size:10px; text-align:right; padding-right:6px;">60%</div>
+      </div>
+
+      <label style="color:#0d6efd;">C</label>
+      <div style="height:12px; background:#e9ecef; border-radius:10px; overflow:hidden;">
+        <div style="width:65%; height:100%; background:#0d6efd; color:white; font-size:10px; text-align:right; padding-right:6px;">65%</div>
+      </div>
     </div>
+
+  </div>
+</section>
+<section id="depoimentos" style="padding:40px 20px; background:#f8f9fa;">
+  <h2 style="text-align:center; color:#0d6efd; margin-bottom:30px;">
+    <i class="fas fa-comment-dots narcisoX14" style="color:#0d6efd;"></i> O que as pessoas dizem sobre mim
+  </h2>
+  
+  <div style="display:flex; flex-wrap:wrap; gap:20px; justify-content:center;">
+    
+    <div style="flex:1; min-width:280px; max-width:320px; background:white; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); padding:20px;">
+      <img src="depoimento/priscila.jpg" alt="Pessoa 1" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
+      <h4 style="color:#0d6efd;">Priscila Pina</h4>
+      <p style="font-style:italic;">"Profissional muito dedicado e criativo. Trabalhar com ele é sempre um prazer!"</p>
+    </div>
+
+    <div style="flex:1; min-width:280px; max-width:320px; background:white; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); padding:20px;">
+      <img src="depoimento/samira.jpg" alt="Pessoa 2" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
+      <h4 style="color:#0d6efd;">Samiro josé</h4>
+      <p style="font-style:italic;">"Tem uma capacidade impressionante de resolver problemas e entregar resultados." </p>
+    </div>
+
+    <div style="flex:1; min-width:280px; max-width:320px; background:white; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); padding:20px;">
+      <img src="depoimento/67d0519f60061.jpg" alt="Pessoa 3" style="width:80px; height:80px; border-radius:50%; object-fit:cover; margin-bottom:10px;">
+      <h4 style="color:#0d6efd;">Dinilson Muginga</h4>
+      <p style="font-style:italic;">"Trabalha com paixão, é comunicativo e sempre busca melhorar. Recomendo 100%!"</p>
+    </div>
+
   </div>
 </section>
 
-<section id="contato">
-  <h2><i class="fas fa-address-book narcisoX14"></i> Contato</h2>
-  <p>Vamos conversar? Me chama no WhatsApp ou envie um e-mail:</p>
-  <button class="narcisoX13" onclick="window.open('https://wa.me/SEU_NUMERO', '_blank')"><i class="fab fa-whatsapp"></i> WhatsApp</button>
-  <button class="narcisoX13" onclick="window.location='mailto:seu@email.com'"><i class="fas fa-envelope"></i> Email</button>
+
+<section class="celmaesteves-section" style="background-color: white;">
+  <div class="celmaesteves-img">
+    <img src="img/1.png" alt="Imagem ilustrativa">
+  </div>
+  <div class="celmaesteves-text">
+    <h1>Sobre mim</h1>
+    <p>Penso profundamente sobre as coisas, não pelo que elas são mais sim pelo que elas podem ser, eu não separo pessoas, pelo contrario gosto de unilas para juntos alcansarmos os objetivos, eu não guardo rancor de ninguém, isto não é produtivo, sou perfeccionista mais não gosto que as outras pessoas notem isso, sou apaixonado pelo poder da programação e do impacto que nossos codigos trazem no mundo.</p>
+    <button class="btn btn-primary w-20">Ver mais</button>
+  </div>
 </section>
+
+
+
+<section class="contact" style="background-color: white;">
+  <div id="particles-contact"></div>
+  <h2>Entre em Contato</h2>
+
+  <div class="contact-container">
+      <!-- Link para WhatsApp -->
+      <div class="contact-box">
+          <i class="fab fa-whatsapp"></i>
+          <h3>Fale Conosco no WhatsApp</h3>
+          <p>Clique no botão abaixo para conversar diretamente conosco pelo WhatsApp.</p>
+          <a href="https://wa.me/seu_numero" target="_blank" class="btn-contact whatsapp">Abrir WhatsApp</a>
+      </div>
+
+      <!-- Link para Facebook -->
+      <div class="contact-box">
+          <i class="fab fa-facebook"></i>
+          <h3>Fale Conosco no WhatsApp</h3>
+          <p>Clique no botão abaixo para conversar diretamente conosco pelo WhatsApp.</p>
+          <a href="https://wa.me/seu_numero" target="_blank" class="btn-contact whatsapp">Abrir WhatsApp</a>
+      </div>
+
+      <!-- Formulário de Contato -->
+      <div class="contact-box">
+          <i class="fas fa-envelope"></i>
+          <h3>Envie-nos um E-mail</h3>
+          <form action="enviar_email.php" method="POST">
+              <input type="text" name="nome" placeholder="Seu Nome" required>
+              <input type="email" name="email" placeholder="Seu E-mail" required>
+              <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea>
+              <button type="submit" class="btn-contact" style="color: white;">Enviar</button>
+          </form>
+      </div>
+  </div>
+</section>
+
+
+
+
+
 <div class="narcisoX12">
-  <p>&copy; 2025 - Desenvolvido por [Seu Nome]. Todos os direitos reservados.</p>
+  <p>&copy; 2025 - Desenvolvido por Gelson Narciso. Todos os direitos reservados.</p>
 </div>
 <script>
   function abrirMenu() {
@@ -275,7 +644,5 @@
     document.getElementById("menuLateral").style.width = "0";
   }
 </script>
-
-
 </body>
 </html>
